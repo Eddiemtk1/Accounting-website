@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us | Sterling Ledger Partners</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#c5c6d2",
+                        "secondary-container": "#d1e1f4",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-surface": "#191c1d",
+                        "on-tertiary-fixed": "#241a00",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "surface-container-low": "#f3f4f5",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container": "#edeeef",
+                        "surface-tint": "#435b9f",
+                        "on-primary-fixed": "#00174a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#d4e4f6",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary-container": "#cca830",
+                        "primary": "#00113a",
+                        "on-primary-container": "#758dd5",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary-container": "#002366",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "outline": "#757682",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-surface-variant": "#444650",
+                        "on-secondary-container": "#556474",
+                        "secondary": "#50606f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#735c00",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "surface": "#f8f9fa",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#394857",
+                        "tertiary-fixed": "#ffe088"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "h3": ["Noto Serif"],
+                        "label-caps": ["Manrope"],
+                        "h2": ["Noto Serif"],
+                        "body-sm": ["Manrope"],
+                        "h1": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "h2": ["36px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .luxury-shadow {
+            box-shadow: 0 4px 20px -5px rgba(0, 35, 102, 0.05);
+        }
+
+        .gold-accent-border {
+            border-left: 4px solid #735c00;
+        }
+    </style>
+</head>
+
+<body class="bg-surface-bright font-body-md text-on-surface antialiased">
+    <!-- TopNavBar Shell -->
+    <header
+        class="fixed top-0 w-full z-50 border-b border-slate-200/20 bg-white/95 backdrop-blur-sm shadow-[0_4px_20px_-5px_rgba(0,35,102,0.05)]">
+        <nav class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+            <div
+                class="text-xl font-bold tracking-widest text-blue-900 uppercase font-serif antialiased tracking-tight">
+                Sterling Ledger Partners
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="text-slate-500 hover:text-blue-900 transition-colors font-serif antialiased tracking-tight"
+                    href="#">Home</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors font-serif antialiased tracking-tight"
+                    href="#">Services</a>
+                <a class="text-blue-900 border-b-2 border-blue-900 pb-1 font-semibold font-serif antialiased tracking-tight"
+                    href="#">About Us</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors font-serif antialiased tracking-tight"
+                    href="#">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-2.5 rounded text-body-sm font-semibold hover:bg-primary-container transition-all active:scale-95">
+                Schedule Consultation
+            </button>
+        </nav>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative bg-primary-container py-xl overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <img alt="Architectural background" class="w-full h-full object-cover"
+                    data-alt="Monochromatic wide shot of a modern architectural building with clean glass lines and structural steel under soft daylight"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4gmoF2rEcN_37AIccXluDYP0Ow8WduH_A-ut21Io6sV2GMJgQfxkUdTu11J1asvukIfG7PtaAEY8mA5jraheXnuJ9yxfNLOrltJL2WNapDr9m6h7f0z-WsWJWpOnNDnhW7oXoUjj8lOftDC717RS2QbDtmsS9aGmMC3WlOyPi9OmZetGHutzbvV9jk-qMyLb_OiZnvrjzWaGOlBa-WPqB__x9l1CRSyYjGk3pNpsQRfadkTaQapR_IVSUwku92a3CF-y0nKN42I1J" />
+            </div>
+            <div class="relative mx-auto max-w-[1200px] px-6 text-center">
+                <span
+                    class="font-label-caps text-on-primary-container text-label-caps uppercase tracking-widest mb-4 block">Institutional
+                    Heritage</span>
+                <h1 class="font-h1 text-h1 text-white mb-6">Built on Foundations of Trust</h1>
+                <p class="font-body-lg text-body-lg text-secondary-container max-w-2xl mx-auto">
+                    For over three decades, Sterling Ledger Partners has navigated the complexities of global wealth
+                    with unwavering precision and discretion.
+                </p>
+            </div>
+        </section>
+        <!-- Our Story Section -->
+        <section class="py-xl mx-auto max-w-[1200px] px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                <div class="space-y-md">
+                    <div class="gold-accent-border pl-6">
+                        <h2 class="font-h2 text-h2 text-primary mb-6">Our Legacy &amp; Mission</h2>
+                    </div>
+                    <div class="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
+                        <p>Founded in 1991 in the heart of the financial district, Sterling Ledger Partners began as a
+                            specialized consultancy for generational wealth preservation. What started as a boutique
+                            partnership has evolved into an international institution, yet our core philosophy remains
+                            unchanged: to provide the structural integrity required for lasting financial success.</p>
+                        <p>Our mission is to serve as the silent architecture behind our clients' triumphs. We believe
+                            that true wealth management is not merely about numbers on a ledger, but about the security,
+                            legacy, and peace of mind that those numbers represent. We are committed to meticulous
+                            organization and high-level financial oversight for those who demand institutional
+                            excellence.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-white p-4 luxury-shadow border border-outline/10">
+                        <img alt="Founding headquarters" class="w-full h-full object-cover grayscale"
+                            data-alt="Stately limestone facade of a prestigious historical financial institution with large columns and ornate brass details"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV7O14ZeZnYT1qm8wGlzbxo290mX4kyOwb0xlglunnO8PVgyF9cdoVKF-LlIbE80UzWV3ihf-BuNkgN-1VFPJcO6RrQBHubb2Pm9xGnSSM9N70FEGjQneffpQHa0y068XxXt9NrzRGRYgW0XUcQK_xjxXbKoxr-3aiAaW8cr3rR04SSSTpK-DGl2AJQsOcHPAozKUfQEvmQbEf5PUlPYHXYloRO3i2a5rVviNnAeJ2ukBTmx5k9PS0jBRhxkZ1PlAwHQRPd9vHdrAr" />
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 bg-tertiary-container p-gutter hidden md:block">
+                        <p class="font-h3 text-h3 text-on-tertiary-container">Est. 1991</p>
+                        <p class="font-label-caps text-on-tertiary-container opacity-80 uppercase">London • New York</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Core Values Section -->
+        <section class="bg-surface-container-low py-xl">
+            <div class="mx-auto max-w-[1200px] px-6">
+                <div class="text-center mb-xl">
+                    <h2 class="font-h2 text-h2 text-primary mb-4">Principles of Stewardship</h2>
+                    <p class="font-body-md text-on-surface-variant">The pillars that define our professional conduct.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Integrity -->
+                    <div
+                        class="bg-white p-md luxury-shadow border border-outline/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="verified_user">verified_user</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-3">Integrity</h3>
+                        <p class="font-body-sm text-on-surface-variant">Uncompromising honesty and transparency in every
+                            transaction and relationship.</p>
+                    </div>
+                    <!-- Precision -->
+                    <div
+                        class="bg-white p-md luxury-shadow border border-outline/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="architecture">architecture</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-3">Precision</h3>
+                        <p class="font-body-sm text-on-surface-variant">A meticulous approach to data that ensures
+                            absolute accuracy in reporting.</p>
+                    </div>
+                    <!-- Sophistication -->
+                    <div
+                        class="bg-white p-md luxury-shadow border border-outline/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl" data-icon="diamond">diamond</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-3">Sophistication</h3>
+                        <p class="font-body-sm text-on-surface-variant">Leveraging decades of expertise to navigate
+                            complex global financial landscapes.</p>
+                    </div>
+                    <!-- Partnership -->
+                    <div
+                        class="bg-white p-md luxury-shadow border border-outline/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-container text-tertiary rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl" data-icon="handshake">handshake</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-3">Partnership</h3>
+                        <p class="font-body-sm text-on-surface-variant">A collaborative spirit focused on achieving
+                            shared long-term objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Meet the Team Section -->
+        <section class="py-xl mx-auto max-w-[1200px] px-6">
+            <div
+                class="flex flex-col md:flex-row md:items-end justify-between mb-xl border-b border-outline/10 pb-base">
+                <div class="mb-gutter md:mb-0">
+                    <h2 class="font-h2 text-h2 text-primary">Senior Partners</h2>
+                    <p class="font-body-md text-on-surface-variant">Guided by industry-leading financial stewards.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-xl">
+                <!-- Partner 1 -->
+                <div class="group">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container luxury-shadow">
+                        <img alt="Senior Partner"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                            data-alt="Professional portrait of a mature man in a tailored dark suit with a focused and confident expression"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASGaYVC73ySSjg6knQjWIjjmDRMvUPO1Wz4BFptHBO_Af-kCsQMl7QfPyzModWq9rHY49dDQDXR_Uk2ghWvDxgCo86JE7haaj0afsJNQBudwsdZ8tEXGP4Nm9416VIfaVjaMfyF9gnIyvWavAMVJLBOsoXLu-EWTHF6F0AWrcFOdyC-_QEMrt4einv3DB47hfPZGEoHEEUFxTaK0-frT-xMg_zkRgwOnwmQpR2JicUdlMgp0kTxdhTVjie6todl_yg004tu9eIbuUx" />
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-h3 text-h3 text-primary">Alistair Sterling</h3>
+                        <p class="font-label-caps text-tertiary uppercase">Managing Director &amp; Founder</p>
+                        <p class="font-body-sm text-on-surface-variant pb-4">With 35 years in private equity and wealth
+                            management, Alistair leads our strategic direction.</p>
+                        <a class="inline-flex items-center text-primary font-semibold hover:text-tertiary transition-colors"
+                            href="#">
+                            LinkedIn Profile <span class="material-symbols-outlined text-sm ml-1"
+                                data-icon="open_in_new">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Partner 2 -->
+                <div class="group">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container luxury-shadow">
+                        <img alt="Senior Partner"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                            data-alt="Professional portrait of a woman in executive attire with a serene and authoritative presence"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbeIO3QVc7MlvxkbeVUHLtVWt8uSqUL1iqomf47b3Yjmn8a3bBsLypnqiIeteS1KyPORE-ijfIw3Yp9TsUUy8cz5OjAqebsm1juFCBQDyOI8D7_06skD_JlrObwB4ekJ2ww6psdCVUH3pJlxuavmrvvSR9wBa90gbvaaVMgtNZYpZDSJf3B0r4CyX7P56oIe9mQMgk-mpUx4EdpAGDYMu3Dx9UvS99lR1eaeVdF8_d6lmXsOqCkw8oTVZEWEv34rCL6QA7Ti4Bvc8U" />
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-h3 text-h3 text-primary">Elizabeth Chen</h3>
+                        <p class="font-label-caps text-tertiary uppercase">Director of International Tax</p>
+                        <p class="font-body-sm text-on-surface-variant pb-4">A former lead consultant at a top-tier
+                            audit firm, Elizabeth oversees cross-border tax structures.</p>
+                        <a class="inline-flex items-center text-primary font-semibold hover:text-tertiary transition-colors"
+                            href="#">
+                            LinkedIn Profile <span class="material-symbols-outlined text-sm ml-1"
+                                data-icon="open_in_new">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Partner 3 -->
+                <div class="group">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 bg-surface-container luxury-shadow">
+                        <img alt="Senior Partner"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                            data-alt="Professional portrait of a senior man with grey hair in a navy blazer against a minimalist studio background"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTzMfPNLVyXS9P3PcV_FjrIkala_NOFKoLB02mbr339OGb3maTklv6z_F1WNcNa8HwztO-lZpPOY2eeRO8dDw3r0VSxdkshzeIPOUSke0XX5YZDSLXI4lpgjxum34LZMttje4GpxbJS85FTAx9muPlLjb94-1_lrIn73hDU1s0lSwJnicyMbxqYr2vXMUu-TG5peI7zm_pN69ba59zfrNdZO33K1bqqIryMTNuA3JWNv_kw-2exAt_z5RwsIA-hNGWB6VteJzQjlc9" />
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-h3 text-h3 text-primary">Marcus Vane</h3>
+                        <p class="font-label-caps text-tertiary uppercase">Head of Wealth Preservation</p>
+                        <p class="font-body-sm text-on-surface-variant pb-4">Marcus specializes in family office
+                            governance and institutional asset allocation models.</p>
+                        <a class="inline-flex items-center text-primary font-semibold hover:text-tertiary transition-colors"
+                            href="#">
+                            LinkedIn Profile <span class="material-symbols-outlined text-sm ml-1"
+                                data-icon="open_in_new">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Global Reach Section -->
+        <section class="bg-primary py-xl text-white">
+            <div class="mx-auto max-w-[1200px] px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                    <div>
+                        <span
+                            class="font-label-caps text-on-primary-container text-label-caps uppercase tracking-widest mb-4 block">Global
+                            Footprint</span>
+                        <h2 class="font-h2 text-h2 mb-6">Unrivaled Network Across Key Financial Hubs</h2>
+                        <p class="font-body-lg text-secondary-container mb-xl">Our presence in primary global markets
+                            allows us to provide localized expertise with a global perspective.</p>
+                        <div class="grid grid-cols-2 gap-md">
+                            <div class="border-l border-white/20 pl-4">
+                                <h4 class="font-h3 text-h3 mb-1">London</h4>
+                                <p class="font-body-sm text-secondary-container">European Headquarters</p>
+                            </div>
+                            <div class="border-l border-white/20 pl-4">
+                                <h4 class="font-h3 text-h3 mb-1">New York</h4>
+                                <p class="font-body-sm text-secondary-container">Americas Hub</p>
+                            </div>
+                            <div class="border-l border-white/20 pl-4">
+                                <h4 class="font-h3 text-h3 mb-1">Singapore</h4>
+                                <p class="font-body-sm text-secondary-container">Asia-Pacific Liaison</p>
+                            </div>
+                            <div class="border-l border-white/20 pl-4">
+                                <h4 class="font-h3 text-h3 mb-1">Zurich</h4>
+                                <p class="font-body-sm text-secondary-container">Private Banking Center</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative aspect-video rounded-lg overflow-hidden border border-white/10 bg-primary-container">
+                        <img alt="Global Reach Map" class="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+                            data-alt="Muted world map with glowing pinpoints indicating major global financial centers in a minimalist navy aesthetic"
+                            data-location="Global"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLG5QW0I8cJw2zLAbbLIivQmTAMBKlweKDuQKt8eYpVP3017iDINH1MXQhWgpnCbxC_M9y82wnP6VapjOm_Yo9SEmbbFbmwkphgbAQF31402cZeuLoSrUyJiFovnw1Wy8E7FlBvqxZ_2TwwrHovJkzAbGObzCY-76cpiT8fsq-MsgG4ZlBZVdEH2nIEdg034dv56_htfvsWNQhkKGg7GYmTOfv7NeFwgGhgW-xsOKBWDiegRS0kS-ryXXZrCd_MxEJGKLaQ-QjPaUm" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Shell -->
+    <footer class="w-full border-t border-slate-200 bg-slate-50">
+        <div class="mx-auto max-w-[1200px] py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+                <div class="text-lg font-semibold text-blue-900 font-serif">Sterling Ledger Partners</div>
+                <p class="text-slate-500 font-serif text-sm leading-relaxed max-w-sm">© 2024 Sterling Ledger Partners.
+                    Institutional Excellence in Wealth Management.</p>
+            </div>
+            <div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+                <a class="text-slate-500 font-serif text-sm hover:text-blue-900 transition-all duration-200 underline underline-offset-4"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-500 font-serif text-sm hover:text-blue-900 transition-all duration-200 underline underline-offset-4"
+                    href="#">Terms of Service</a>
+                <a class="text-slate-500 font-serif text-sm hover:text-blue-900 transition-all duration-200 underline underline-offset-4"
+                    href="#">Tax Resources</a>
+                <a class="text-slate-500 font-serif text-sm hover:text-blue-900 transition-all duration-200 underline underline-offset-4"
+                    href="#">Client Portal</a>
+                <a class="text-slate-500 font-serif text-sm hover:text-blue-900 transition-all duration-200 underline underline-offset-4"
+                    href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

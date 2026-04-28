@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#c5c6d2",
+                        "secondary-container": "#d1e1f4",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-surface": "#191c1d",
+                        "on-tertiary-fixed": "#241a00",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "surface-container-low": "#f3f4f5",
+                        "error": "#ba1a1a",
+                        "surface-container": "#edeeef",
+                        "surface-tint": "#435b9f",
+                        "on-primary-fixed": "#00174a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#d4e4f6",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary-container": "#cca830",
+                        "primary": "#00113a",
+                        "on-primary-container": "#758dd5",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary-container": "#002366",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "outline": "#757682",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-surface-variant": "#444650",
+                        "on-secondary-container": "#556474",
+                        "secondary": "#50606f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#735c00",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "surface": "#f8f9fa",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#394857",
+                        "tertiary-fixed": "#ffe088"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "h3": ["Noto Serif"],
+                        "label-caps": ["Manrope"],
+                        "h2": ["Noto Serif"],
+                        "body-sm": ["Manrope"],
+                        "h1": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "h2": ["36px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .navy-shadow {
+            box-shadow: 0 4px 20px -5px rgba(0, 35, 102, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-surface-bright font-body-md text-on-surface antialiased">
+    <!-- TopNavBar Shell -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200/20 shadow-[0_4px_20px_-5px_rgba(0,35,102,0.05)]">
+        <div class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+            <div class="text-xl font-bold tracking-widest text-blue-900 uppercase font-serif">
+                Sterling Ledger Partners
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-500 hover:text-blue-900 transition-colors font-serif antialiased tracking-tight"
+                    href="#">Home</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors font-serif antialiased tracking-tight"
+                    href="#">Services</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors font-serif antialiased tracking-tight"
+                    href="#">About Us</a>
+                <a class="text-blue-900 border-b-2 border-blue-900 pb-1 font-semibold font-serif antialiased tracking-tight"
+                    href="#">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-serif tracking-tight active:scale-95 transition-transform cursor-pointer">
+                Schedule Consultation
+            </button>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-white py-xl border-b border-outline-variant/10">
+            <div class="max-w-[1200px] mx-auto px-6 text-center">
+                <span class="text-label-caps font-label-caps text-tertiary mb-base block uppercase">Private Client
+                    Services</span>
+                <h1 class="text-h1 font-h1 text-primary mb-md">Connect with a Partner</h1>
+                <p class="text-body-lg font-body-lg text-secondary max-w-2xl mx-auto">
+                    Initiate a discreet dialogue regarding your global wealth management, tax strategy, and
+                    institutional reporting requirements.
+                </p>
+            </div>
+        </section>
+        <!-- Form & Offices Bento Layout -->
+        <section class="py-xl max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-7 bg-white p-lg rounded-lg border border-outline-variant/20 navy-shadow">
+                    <h3 class="text-h3 font-h3 text-primary mb-lg">Inquiry Details</h3>
+                    <form class="space-y-md">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                            <div class="space-y-xs">
+                                <label class="text-label-caps font-label-caps text-on-surface-variant uppercase">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-white border border-outline-variant rounded p-3 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all"
+                                    placeholder="Johnathan Sterling" type="text" />
+                            </div>
+                            <div class="space-y-xs">
+                                <label
+                                    class="text-label-caps font-label-caps text-on-surface-variant uppercase">Company</label>
+                                <input
+                                    class="w-full bg-white border border-outline-variant rounded p-3 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all"
+                                    placeholder="Institutional Name" type="text" />
+                            </div>
+                        </div>
+                        <div class="space-y-xs">
+                            <label class="text-label-caps font-label-caps text-on-surface-variant uppercase">Nature of
+                                Inquiry</label>
+                            <select
+                                class="w-full bg-white border border-outline-variant rounded p-3 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
+                                <option>Wealth Management &amp; Advisory</option>
+                                <option>Corporate Tax Strategy</option>
+                                <option>Trust &amp; Estate Services</option>
+                                <option>Reporting &amp; Audit Compliance</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="space-y-xs">
+                            <label
+                                class="text-label-caps font-label-caps text-on-surface-variant uppercase">Message</label>
+                            <textarea
+                                class="w-full bg-white border border-outline-variant rounded p-3 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all"
+                                placeholder="Briefly describe your objectives..." rows="5"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-primary text-on-primary py-4 rounded font-semibold tracking-wide hover:bg-primary-container transition-colors active:scale-[0.99]"
+                            type="submit">
+                            Submit Formal Inquiry
+                        </button>
+                    </form>
+                </div>
+                <!-- Office Locations Column -->
+                <div class="lg:col-span-5 space-y-gutter">
+                    <!-- Location: London -->
+                    <div
+                        class="bg-white p-gutter border border-outline-variant/20 rounded navy-shadow relative overflow-hidden flex items-start gap-md">
+                        <div class="h-full w-1 bg-primary absolute left-0 top-0"></div>
+                        <div class="flex-shrink-0">
+                            <span class="material-symbols-outlined text-primary text-h3">account_balance</span>
+                        </div>
+                        <div>
+                            <h4 class="text-body-lg font-bold text-primary">London (Global HQ)</h4>
+                            <p class="text-body-sm font-body-sm text-secondary mt-xs">15 Mayfair Square, London W1J 8AJ,
+                                United Kingdom</p>
+                            <p class="text-body-sm font-body-sm text-primary font-semibold mt-xs">+44 20 7946 0120</p>
+                        </div>
+                    </div>
+                    <!-- Location: New York -->
+                    <div
+                        class="bg-white p-gutter border border-outline-variant/20 rounded navy-shadow relative overflow-hidden flex items-start gap-md">
+                        <div class="h-full w-1 bg-tertiary-container absolute left-0 top-0"></div>
+                        <div class="flex-shrink-0">
+                            <span class="material-symbols-outlined text-primary text-h3">location_city</span>
+                        </div>
+                        <div>
+                            <h4 class="text-body-lg font-bold text-primary">New York</h4>
+                            <p class="text-body-sm font-body-sm text-secondary mt-xs">700 Park Avenue, Suite 1200, New
+                                York, NY 10021, USA</p>
+                            <p class="text-body-sm font-body-sm text-primary font-semibold mt-xs">+1 212 555 0198</p>
+                        </div>
+                    </div>
+                    <!-- Location: Singapore -->
+                    <div
+                        class="bg-white p-gutter border border-outline-variant/20 rounded navy-shadow relative overflow-hidden flex items-start gap-md">
+                        <div class="h-full w-1 bg-primary absolute left-0 top-0"></div>
+                        <div class="flex-shrink-0">
+                            <span class="material-symbols-outlined text-primary text-h3">hub</span>
+                        </div>
+                        <div>
+                            <h4 class="text-body-lg font-bold text-primary">Singapore</h4>
+                            <p class="text-body-sm font-body-sm text-secondary mt-xs">Marina Bay Financial Centre, Tower
+                                3, Singapore 018984</p>
+                            <p class="text-body-sm font-body-sm text-primary font-semibold mt-xs">+65 6789 0012</p>
+                        </div>
+                    </div>
+                    <!-- Map Placeholder/Image -->
+                    <div class="relative h-64 w-full rounded overflow-hidden navy-shadow">
+                        <img class="w-full h-full object-cover"
+                            data-alt="stylized architectural map of a metropolitan financial district with soft blue and gray tones reflecting modern urban planning"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYruRcbERhHQo23HRMm0vBILA7YVxUY9TLAq2y3cdmcTVTzaYSk6fdm8kNKV_kFCbtjvKzM5FoBONBaVWTWnPLIOrbdzyXnImEldeFfqOLmogIlXQ4R-dKxLiVC3Wx_2NdGR4a2SD3rZXrhYFKATuLpNhCgDmIxH66TGsVn1iMXI65eFVBbeN_4F3X7YFnWd00OiPuxK2scscdFJzfwLlQ-B_dFjweuq0kaVrjb29pHkN5OaoF6LVFBUy4bFfm8jSVkkfD0M28DAw1" />
+                        <div class="absolute inset-0 bg-primary/10"></div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded border border-outline-variant/30 text-body-sm font-semibold">
+                            Global Reach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Snippet Section -->
+        <section class="bg-surface-container-low py-xl">
+            <div class="max-w-[1200px] mx-auto px-6">
+                <div class="text-center mb-lg">
+                    <h2 class="text-h2 font-h2 text-primary">Initial Consultation</h2>
+                    <p class="text-body-md font-body-md text-secondary mt-sm">Answers to common inquiries regarding our
+                        intake process.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-md max-w-4xl mx-auto">
+                    <div class="bg-white p-md rounded border border-outline-variant/10">
+                        <h5 class="text-body-lg font-bold text-primary mb-xs">What is the onboarding timeframe?</h5>
+                        <p class="text-body-sm font-body-sm text-secondary">A typical institutional onboarding takes 4-6
+                            weeks, inclusive of full compliance review and data integration.</p>
+                    </div>
+                    <div class="bg-white p-md rounded border border-outline-variant/10">
+                        <h5 class="text-body-lg font-bold text-primary mb-xs">Do you offer global tax coordination?</h5>
+                        <p class="text-body-sm font-body-sm text-secondary">Yes, our partners coordinate with local
+                            jurisdictional experts to ensure worldwide tax efficiency and reporting accuracy.</p>
+                    </div>
+                    <div class="bg-white p-md rounded border border-outline-variant/10">
+                        <h5 class="text-body-lg font-bold text-primary mb-xs">Is there a minimum portfolio size?</h5>
+                        <p class="text-body-sm font-body-sm text-secondary">Our private client services typically engage
+                            with families and entities managing assets in excess of $25M USD.</p>
+                    </div>
+                    <div class="bg-white p-md rounded border border-outline-variant/10">
+                        <h5 class="text-body-lg font-bold text-primary mb-xs">How secure is my initial outreach?</h5>
+                        <p class="text-body-sm font-body-sm text-secondary">All digital communications are encrypted.
+                            Our partners adhere to strict institutional privacy and non-disclosure protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Shell -->
+    <footer class="w-full border-t border-slate-200 bg-slate-50">
+        <div
+            class="mx-auto max-w-[1200px] py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center font-serif text-sm leading-relaxed">
+            <div>
+                <div class="text-lg font-semibold text-blue-900 mb-4">Sterling Ledger Partners</div>
+                <div class="text-slate-500">
+                    © 2024 Sterling Ledger Partners. Institutional Excellence in Wealth Management.
+                </div>
+            </div>
+            <div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+                <a class="text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Terms of Service</a>
+                <a class="text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Tax Resources</a>
+                <a class="text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Client Portal</a>
+                <a class="text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

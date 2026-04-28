@@ -1,0 +1,412 @@
+<!doctype html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sterling Ledger Partners | Institutional Excellence</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#c5c6d2",
+                        "secondary-container": "#d1e1f4",
+                        "inverse-primary": "#b3c5ff",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-surface": "#191c1d",
+                        "on-tertiary-fixed": "#241a00",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "surface-container-low": "#f3f4f5",
+                        error: "#ba1a1a",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container": "#edeeef",
+                        "surface-tint": "#435b9f",
+                        "on-primary-fixed": "#00174a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#d4e4f6",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary-container": "#cca830",
+                        primary: "#00113a",
+                        "on-primary-container": "#758dd5",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary-container": "#002366",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        outline: "#757682",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-surface-variant": "#444650",
+                        "on-secondary-container": "#556474",
+                        secondary: "#50606f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "on-error-container": "#93000a",
+                        tertiary: "#735c00",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        surface: "#f8f9fa",
+                        "on-secondary-fixed": "#0d1d2a",
+                        background: "#f8f9fa",
+                        "on-secondary-fixed-variant": "#394857",
+                        "tertiary-fixed": "#ffe088",
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem",
+                    },
+                    spacing: {
+                        sm: "12px",
+                        gutter: "24px",
+                        base: "8px",
+                        md: "24px",
+                        xs: "4px",
+                        lg: "48px",
+                        xl: "80px",
+                        "container-max": "1200px",
+                    },
+                    fontFamily: {
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        h3: ["Noto Serif"],
+                        "label-caps": ["Manrope"],
+                        h2: ["Noto Serif"],
+                        "body-sm": ["Manrope"],
+                        h1: ["Noto Serif"],
+                    },
+                    fontSize: {
+                        "body-lg": [
+                            "18px",
+                            { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" },
+                        ],
+                        "body-md": [
+                            "16px",
+                            { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" },
+                        ],
+                        h3: [
+                            "24px",
+                            { lineHeight: "1.4", letterSpacing: "0", fontWeight: "600" },
+                        ],
+                        "label-caps": [
+                            "12px",
+                            { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700" },
+                        ],
+                        h2: [
+                            "36px",
+                            {
+                                lineHeight: "1.3",
+                                letterSpacing: "-0.01em",
+                                fontWeight: "600",
+                            },
+                        ],
+                        "body-sm": [
+                            "14px",
+                            {
+                                lineHeight: "1.5",
+                                letterSpacing: "0.01em",
+                                fontWeight: "400",
+                            },
+                        ],
+                        h1: [
+                            "48px",
+                            {
+                                lineHeight: "1.2",
+                                letterSpacing: "-0.02em",
+                                fontWeight: "700",
+                            },
+                        ],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                "FILL" 0,
+                "wght" 300,
+                "GRAD" 0,
+                "opsz" 24;
+        }
+
+        .nav-shadow {
+            box-shadow: 0 4px 20px -5px rgba(0, 35, 102, 0.05);
+        }
+
+        .surface-card {
+            background-color: #ffffff;
+            border: 1px solid rgba(197, 198, 210, 0.2);
+            box-shadow: 0 10px 30px -10px rgba(0, 35, 102, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-surface-bright text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 border-b border-slate-200/20 bg-white/95 backdrop-blur-sm nav-shadow">
+        <div class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+            <div class="text-xl font-bold tracking-widest text-blue-900 uppercase font-serif">
+                Sterling Ledger Partners
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-serif antialiased tracking-tight">
+                <a class="text-blue-900 border-b-2 border-blue-900 pb-1 font-semibold" href="#">Home</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors" href="#">Services</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors" href="#">About Us</a>
+                <a class="text-slate-500 hover:text-blue-900 transition-colors" href="#">Contact</a>
+            </nav>
+            <button
+                class="bg-primary text-white px-6 py-3 rounded-lg font-body-md font-semibold cursor-pointer active:scale-95 transition-transform">
+                Schedule Consultation
+            </button>
+        </div>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[870px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Modern boardroom" class="w-full h-full object-cover"
+                    data-alt="Luxurious modern boardroom with a large marble table, designer chairs, and floor-to-ceiling windows overlooking a soft urban skyline at dusk"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAinUIYIMcyUlLR8brSPqdeNAfJvpOKyNS2czOEcyIObrf5w6ird1vehbMVI7-poyj729P4LgIha_s2dQMztS0O95YUVrrdZn4kwYlxSL7Z5kJQDjTqoXdmEfjLjum6h-kWvO9-Ew7Bu9ju7oZNmL89oYAzJ9WoO7Sq5QNdXplWBW8ESAiN1h1gOxjj1aJIdRaw3kFBOsUMkwhMbgJ4Ufb9CdqXtX40rg_tCZ9Z8g6B6x2XknqLta7w9rzG4-ELDRxpfx5aiVfjzP8_" />
+                <div class="absolute inset-0 bg-primary/40 backdrop-brightness-75"></div>
+            </div>
+            <div class="relative z-10 mx-auto max-w-[1200px] px-6 w-full text-white">
+                <div class="max-w-2xl">
+                    <span class="font-label-caps text-label-caps text-tertiary-fixed mb-4 block">INSTITUTIONAL
+                        EXCELLENCE</span>
+                    <h1 class="font-h1 text-h1 mb-6 leading-tight">
+                        Precision Accounting for Visionary Partners
+                    </h1>
+                    <p class="font-body-lg text-body-lg mb-10 text-white/90">
+                        Navigating the complexities of global finance with the discretion
+                        and meticulous detail your legacy demands.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-tertiary text-primary px-8 py-4 rounded font-body-md font-bold hover:bg-tertiary-fixed transition-all duration-300">
+                            Schedule a Consultation
+                        </button>
+                        <button
+                            class="border border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded font-body-md font-bold hover:bg-white/10 transition-all duration-300">
+                            View Services
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Value Propositions -->
+        <section class="py-xl bg-surface">
+            <div class="mx-auto max-w-[1200px] px-6">
+                <div class="text-center mb-xl">
+                    <h2 class="font-h2 text-h2 text-primary mb-4">
+                        A Framework for Lasting Prosperity
+                    </h2>
+                    <p class="font-body-md text-body-md text-slate-500 max-w-xl mx-auto">
+                        Our specialized services are tailored to the unique financial
+                        architectures of high-net-worth individuals and corporate
+                        entities.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Prop 1 -->
+                    <div class="surface-card p-md rounded-lg group hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="account_balance">account_balance</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-4">
+                            Strategic Tax Planning
+                        </h3>
+                        <p class="font-body-md text-body-md text-slate-600 mb-6">
+                            Sophisticated multi-jurisdictional tax strategies designed to
+                            preserve wealth across generations while ensuring absolute
+                            compliance.
+                        </p>
+                        <a class="text-primary font-bold font-body-sm flex items-center gap-2 group-hover:gap-4 transition-all"
+                            href="#">
+                            Learn More
+                            <span class="material-symbols-outlined text-sm"
+                                data-icon="arrow_forward">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Prop 2 -->
+                    <div
+                        class="surface-card p-md rounded-lg group border-t-4 border-t-primary hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="monitoring">monitoring</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-4">
+                            Institutional Wealth
+                        </h3>
+                        <p class="font-body-md text-body-md text-slate-600 mb-6">
+                            Holistic portfolio oversight and risk management services that
+                            mirror the discipline of the world's leading sovereign funds.
+                        </p>
+                        <a class="text-primary font-bold font-body-sm flex items-center gap-2 group-hover:gap-4 transition-all"
+                            href="#">
+                            Learn More
+                            <span class="material-symbols-outlined text-sm"
+                                data-icon="arrow_forward">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Prop 3 -->
+                    <div class="surface-card p-md rounded-lg group hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                data-icon="cognition">cognition</span>
+                        </div>
+                        <h3 class="font-h3 text-h3 text-primary mb-4">
+                            Advisory Services
+                        </h3>
+                        <p class="font-body-md text-body-md text-slate-600 mb-6">
+                            Discreet business advisory for mergers, acquisitions, and legacy
+                            transitions, powered by decades of institutional expertise.
+                        </p>
+                        <a class="text-primary font-bold font-body-sm flex items-center gap-2 group-hover:gap-4 transition-all"
+                            href="#">
+                            Learn More
+                            <span class="material-symbols-outlined text-sm"
+                                data-icon="arrow_forward">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trust Signals & Testimonial -->
+        <section class="py-xl bg-surface-container-low border-y border-slate-200/50">
+            <div class="mx-auto max-w-[1200px] px-6">
+                <div class="flex flex-wrap justify-between items-center opacity-40 grayscale mb-xl">
+                    <img alt="Partner Logo 1" class="h-8" data-alt="Minimalist abstract corporate logo in slate gray"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE9Agj_mdDXEIiSYq5H92nNYCFzLKTlBhNv0mxD88UeIRIMkOLKjCRtAv6igHfsYjWB1V4PrXd8APi_6FDdQzdGlIzIyE4bfxmMI6mx47zp61FWAkhEzzuW55ZgZqVo_SfKbg5URI8EoIzghpl7fFbNxfJAYEeOaTLBgIe_Kwn5Je1BI81pcl1D0uZ_ir5D7hNhXJzQvKQCADqgtzNPLtS5pO7XBj4kQBGalXGrjFlKqnv4Gq7piNW1pfsG4wd22_bna8V8c1yO4LZ" />
+                    <img alt="Partner Logo 2" class="h-8"
+                        data-alt="Professional financial institution emblem in slate gray"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5QAxN3R2TIuWfr35O8JK8FTMuNJnoapOEsXNSxUmswTse_DZwJEbRD9qiLMHg5_aig-WmBf9oOINn4qAZCec8Q_W4xnhC3Ce5U0dl3tFqtas48wrurcvXdzrtH9r-a8Falg7b8afAwr6IDr43g1bB4V4cknYiJajxnFUuDoYd5-MWBVgELNR3ijeyny6FCmKjwhguF0HZSbFo7aq-UeRgpTMdO-arOiCrrJ0N699EaGTl03KzUgHseI4N-l3VFFV8WzP8FU4Kj8TZ" />
+                    <img alt="Partner Logo 3" class="h-8" data-alt="Simplified architectural firm logo in slate gray"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD__YXRXM6Sab6AmNh7JunwfPnAd4nYava15pVDtd-fHg7hFQmvmWhlFf2tBnJg49jN4VrzxAbUaRtgUEE6X8JFt7a6V8VBTLG2BbP793g1OYwLGPFS0GhDVdWi5JMFiZsipmQ9DZmBYeTbXhDiTg3sIOOkY2H2fvWCBgQopstGQ6aB-F3d7-zlzDwJ3E4mcDGFf5stUmmGVyeOi4SKda4PCWHL5PInsgl_MYOvsc4nz-fLPTJv5tya6gBrLs3J1mgnBteUqaVO3H5u" />
+                    <img alt="Partner Logo 4" class="h-8" data-alt="Modern legal firm wordmark in slate gray"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbdtMbNbYMVMfKDfFlLyercybYWPHcHSJF39_au_6G5A0U8VfICbn9Tt-spX0Fe9MGYX24InjQbz1ESRjM3S-auLHMWcRbngjvrnUmtsHpy6YzJlnE_zfAS8TJaB2lSEVTLTKVwXH4AdW1XIjLXrQ9TYOclyl9I08Wz7NC-tezuG_00BfIjebgxE-LgHWiPXjMjV-OO_6zGrnee6wZAevDSw1BjWqFlM5ID6t4ePxJ0LXMToHig0-BD-2dLsuYRjigdv05ifDtz2M5" />
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-tertiary/10 rounded-full blur-2xl"></div>
+                        <h2 class="font-h2 text-h2 text-primary relative z-10 leading-tight">
+                            A reputation forged in silence and built on results.
+                        </h2>
+                    </div>
+                    <div class="bg-white p-lg rounded-lg border-l-4 border-l-tertiary shadow-xl shadow-primary/5">
+                        <div class="mb-6 flex text-tertiary">
+                            <span class="material-symbols-outlined" data-weight="fill"
+                                style="font-variation-settings: &quot;FILL&quot; 1">star</span>
+                            <span class="material-symbols-outlined" data-weight="fill"
+                                style="font-variation-settings: &quot;FILL&quot; 1">star</span>
+                            <span class="material-symbols-outlined" data-weight="fill"
+                                style="font-variation-settings: &quot;FILL&quot; 1">star</span>
+                            <span class="material-symbols-outlined" data-weight="fill"
+                                style="font-variation-settings: &quot;FILL&quot; 1">star</span>
+                            <span class="material-symbols-outlined" data-weight="fill"
+                                style="font-variation-settings: &quot;FILL&quot; 1">star</span>
+                        </div>
+                        <blockquote class="font-body-lg text-body-lg italic text-slate-700 mb-8 leading-relaxed">
+                            "Sterling Ledger Partners operates with a level of precision and
+                            strategic foresight that I haven't found elsewhere. They don't
+                            just manage my accounts; they architect my family's financial
+                            future with complete discretion."
+                        </blockquote>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full overflow-hidden bg-slate-200">
+                                <img alt="Client portrait" class="w-full h-full object-cover"
+                                    data-alt="Portrait of a sophisticated mature gentleman in a tailored navy suit with a professional demeanor"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNnACiczOhf3HUA1iygZv3qRB--HNOwkK7fayk6dsg5TlMhmjDZoWH0tzzwaMPkSRE_NFtKBptYKhQ1g5pT5VZanAyeF98NOKFXVvf2THQMKq6SzC28GOxXNVEIC3iXlD3vCFCHd3fEr9wha2l9u-Ha99NoI1bNGpMHx69Ue-jQ7TsX--TxFtbqD4rwCsg3npB4JP7fARRzjj_jMo0R0_AKOVEAIJv-FgrBpeHcSYNZfn5H1Sxca5R99k9nPrqhTFVk0DnGP8i2NUM" />
+                            </div>
+                            <div>
+                                <p class="font-body-md font-bold text-primary">
+                                    Julian Thorne
+                                </p>
+                                <p class="font-body-sm text-slate-500">
+                                    Managing Director, Thorne Global Holdings
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mid-Page CTA -->
+        <section class="py-xl relative overflow-hidden bg-primary text-white">
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+                <svg class="w-full h-full" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,400 Q200,0 400,400" fill="transparent" stroke="white" stroke-width="1"></path>
+                    <path d="M0,350 Q200,-50 400,350" fill="transparent" stroke="white" stroke-width="1"></path>
+                    <path d="M0,300 Q200,-100 400,300" fill="transparent" stroke="white" stroke-width="1"></path>
+                </svg>
+            </div>
+            <div class="mx-auto max-w-[1200px] px-6 text-center relative z-10">
+                <h2 class="font-h2 text-h2 mb-6">Experience Sovereign Oversight</h2>
+                <p class="font-body-lg text-body-lg mb-10 text-white/80 max-w-2xl mx-auto">
+                    Our partners are currently accepting a limited number of new
+                    institutional clients for the upcoming fiscal year. Begin your
+                    transition to institutional-grade wealth management today.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-gutter">
+                    <button
+                        class="bg-white text-primary px-10 py-5 rounded font-bold font-body-md hover:bg-slate-100 transition-all">
+                        Request Private Access
+                    </button>
+                    <button
+                        class="border border-white/40 px-10 py-5 rounded font-bold font-body-md hover:bg-white/10 transition-all">
+                        Explore Our Approach
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-200 bg-slate-50">
+        <div class="mx-auto max-w-[1200px] py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <div class="text-lg font-semibold text-blue-900 mb-4 font-serif">
+                    Sterling Ledger Partners
+                </div>
+                <p class="font-serif text-sm leading-relaxed text-slate-500">
+                    © 2024 Sterling Ledger Partners. Institutional Excellence in Wealth
+                    Management.
+                </p>
+            </div>
+            <div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+                <a class="font-serif text-sm text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Privacy Policy</a>
+                <a class="font-serif text-sm text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Terms of Service</a>
+                <a class="font-serif text-sm text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Tax Resources</a>
+                <a class="font-serif text-sm text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Client Portal</a>
+                <a class="font-serif text-sm text-slate-500 hover:text-blue-900 underline underline-offset-4 transition-all duration-200"
+                    href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
