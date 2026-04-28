@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Client Access Portal | Sterling Ledger Partners</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1d",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#435b9f",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d9dadb",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#d1e1f4",
+                        "primary-container": "#002366",
+                        "on-primary-container": "#758dd5",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "inverse-on-surface": "#f0f1f2",
+                        "background": "#f8f9fa",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "on-surface": "#191c1d",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "on-secondary-container": "#556474",
+                        "outline": "#757682",
+                        "secondary": "#50606f",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#735c00",
+                        "primary-fixed": "#dbe1ff",
+                        "primary": "#00113a",
+                        "outline-variant": "#c5c6d2",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#4f3e00",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "surface-container": "#edeeef",
+                        "on-primary-fixed": "#00174a",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#d4e4f6",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-primary": "#b3c5ff",
+                        "on-secondary-fixed-variant": "#394857",
+                        "tertiary-container": "#cca830",
+                        "inverse-surface": "#2e3132",
+                        "tertiary-fixed": "#ffe088",
+                        "on-surface-variant": "#444650"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "md": "24px",
+                        "container-max": "1200px",
+                        "xs": "4px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "h1": ["Noto Serif"],
+                        "h3": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "h2": ["36px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(0, 35, 102, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"
+    style="background-color: #f8f9fa;">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-slate-200 dark:border-slate-800 shadow-[0_4px_20px_-5px_rgba(0,35,102,0.05)]">
+        <div class="flex items-center justify-between mx-auto max-w-[1200px] h-20 px-6">
+            <div class="text-xl font-bold tracking-widest text-[#002366] dark:text-white uppercase font-serif">
+                Sterling Ledger Partners
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-serif antialiased tracking-tight">
+                <a class="text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1 font-semibold cursor-pointer active:scale-95 transition-transform"
+                    href="#">Home</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors cursor-pointer active:scale-95 transition-transform"
+                    href="#">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors cursor-pointer active:scale-95 transition-transform"
+                    href="#">About Us</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors cursor-pointer active:scale-95 transition-transform"
+                    href="#">Contact</a>
+                <button
+                    class="bg-[#002366] text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-opacity-90 transition-all duration-300 cursor-pointer active:scale-95">Schedule
+                    Consultation</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow flex items-center justify-center relative py-xl px-gutter bg-pattern overflow-hidden pt-32">
+        <!-- Subtle Architectural Background Decorative Element -->
+        <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+            <img alt="Institutional Architecture" class="w-full h-full object-cover grayscale"
+                data-alt="abstract wide shot of a modern glass and steel skyscraper facade reflecting light with clean lines and geometric precision"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ6AGBedTPN_g_YbQW0EIPduHo1e9BeMwJFNzv2Oj26IdmWrar8DFwlsbvfVf7qGqSE6FIYYO7Qr86TWlhjGYGroikeEjDL-b7bXd9nG5D8Y_-uVVn9_kmOeMRhZMjeTanccO40MKB8ynfEGe-VpkXvYp3dZlWwbl7qUpwXRPyYvb3u1vlQB-T32gYQ4yuRQmgDAVn6N0LDiZ9b8E7xi4qqsCROyW2cynlf2ND9cZ6TrHRoLbY76GAKCeoP63whZJ3q_e9jpSXEkjw" />
+        </div>
+        <div class="relative z-10 w-full max-w-[440px] animate-fade-in">
+            <!-- Login Card -->
+            <div
+                class="bg-white border border-slate-200 shadow-[0_20px_50px_-12px_rgba(0,35,102,0.1)] rounded-lg overflow-hidden">
+                <div class="h-1 bg-primary-container w-full" style="background-color: #002366;"></div>
+                <div class="p-lg md:p-xl">
+                    <div class="text-center mb-10">
+                        <span class="material-symbols-outlined text-[#002366] text-4xl mb-4"
+                            data-icon="shield_lock">shield_lock</span>
+                        <h1 class="font-h2 text-h2 text-primary mb-2">Client Access Portal</h1>
+                        <p class="text-body-sm text-secondary">Secure entrance for Sterling Ledger Partners</p>
+                    </div>
+                    <form class="space-y-6" onsubmit="return false;">
+                        <div class="space-y-2">
+                            <label class="font-label-caps text-label-caps text-secondary block" for="email">EMAIL
+                                ADDRESS</label>
+                            <div class="relative">
+                                <input
+                                    class="w-full px-4 py-3 bg-white border border-outline-variant rounded focus:ring-0 focus:border-primary-container border-opacity-50 transition-all outline-none font-body-md"
+                                    id="email" placeholder="client@institution.com" type="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <label class="font-label-caps text-label-caps text-secondary block"
+                                    for="password">PASSWORD</label>
+                                <a class="text-body-sm text-primary hover:underline font-medium" href="#">Forgot
+                                    Password?</a>
+                            </div>
+                            <div class="relative">
+                                <input
+                                    class="w-full px-4 py-3 bg-white border border-outline-variant rounded focus:ring-0 focus:border-primary-container border-opacity-50 transition-all outline-none font-body-md"
+                                    id="password" placeholder="••••••••" type="password" />
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input
+                                class="w-4 h-4 rounded-sm border-outline-variant text-primary focus:ring-primary-container"
+                                id="remember" type="checkbox" />
+                            <label class="text-body-sm text-secondary select-none" for="remember">Remember this device
+                                for 30 days</label>
+                        </div>
+                        <button
+                            class="w-full bg-primary-container text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl active:scale-[0.98] transition-all duration-200 font-body-md flex items-center justify-center gap-2"
+                            style="background-color: #002366;" type="submit">
+                            <span class="material-symbols-outlined text-sm" data-icon="lock" data-weight="fill"
+                                style="font-variation-settings: 'FILL' 1;">lock</span>
+                            Secure Login
+                        </button>
+                    </form>
+                    <div class="mt-8 pt-8 border-t border-slate-100 text-center">
+                        <div
+                            class="flex items-center justify-center gap-2 text-xs text-slate-400 font-medium uppercase tracking-widest mb-2">
+                            <span class="material-symbols-outlined text-sm"
+                                data-icon="verified_user">verified_user</span>
+                            Security Protocol Active
+                        </div>
+                        <p class="text-[11px] leading-relaxed text-slate-500 font-body-sm">
+                            Your connection is encrypted with industry-standard 256-bit SSL. For your protection, all
+                            sessions are monitored and recorded for compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Supporting Text -->
+            <div class="mt-6 flex justify-between items-center text-body-sm text-slate-500 px-2">
+                <span>Need assistance?</span>
+                <a class="text-primary hover:underline font-semibold" href="#">Contact Concierge</a>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-[#F8F9FA] dark:bg-slate-950 w-full border-t border-slate-200 dark:border-slate-800 font-noto-serif text-sm tracking-tight">
+        <div class="max-w-[1200px] mx-auto py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-slate-600 dark:text-slate-400 order-2 md:order-1 text-center md:text-left">© 2024 Sterling
+                Ledger Partners. Institutional Excellence in Wealth Management.</div>
+            <div class="flex flex-wrap justify-center gap-6 order-1 md:order-2">
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002366] dark:hover:text-slate-200 transition-all cursor-default"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002366] dark:hover:text-slate-200 transition-all cursor-default"
+                    href="#">Terms of Service</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002366] dark:hover:text-slate-200 transition-all cursor-default"
+                    href="#">Security Disclosure</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002366] dark:hover:text-slate-200 transition-all cursor-default"
+                    href="#">Regulatory Filings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
